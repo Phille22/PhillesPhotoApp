@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Philles Photo App</string>
+    <string name="action_settings">Settings</string>
+    <string name="button">Choose From Gallery</string>
+</resources>
