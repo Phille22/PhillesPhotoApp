@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHolder> {
     private ArrayList<Image> arrayList;
     private LayoutInflater mInflater;
+    Helpers helper;
 
     public ImageAdapter(Context context, ArrayList arrayList){
         mInflater = LayoutInflater.from(context);
@@ -31,7 +32,8 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
     @Override
     public void onBindViewHolder(@NonNull ImageAdapter.ImageViewHolder holder, int position) {
-        Bitmap mCurrentImage = arrayList.get(position).image;
+        String currentImageString = arrayList.get(position).image;
+        Bitmap mCurrentImage = helper.getBitmapFromString(currentImageString);
         String mCurrentDescription = arrayList.get(position).description;
         holder.imageView.setImageBitmap(mCurrentImage);
         holder.textViewDescription.setText(mCurrentDescription);

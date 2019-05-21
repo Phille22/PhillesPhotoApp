@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Philles Fotoapp</string>
+    <string name="action_settings">Ta bort alla bilder</string>
+    <string name="button">Välj från galleri</string>
+    <string name="image_activity">Foto</string>
+</resources>

@@ -1,12 +1,10 @@
 package com.example.phillesphotoapp;
 
-import android.graphics.Bitmap;
-
 public class Image {
-    public Bitmap image;
+    public String image;
     public String description;
 
-    public Image(Bitmap image, String description){
+    public Image(String image, String description){
         this.image = image;
         this.description = description;
     }
